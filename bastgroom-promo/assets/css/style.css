@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,700');
-
+/*#f46c38*/
 body {
-	color: #7c8081;
+	color: #787878;
 	background-color: #f3f6fa;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 18px;
@@ -9,13 +9,13 @@ body {
     line-height: 26px;
 }
 header {
-	background-image: url("../img/bg-header.jpg");
+	background-image: url("../img/slide.jpg");
 	background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .header-top {
-	color: #ffffff;
+	color: #000000;
 }
 .header-top .header-logo {
 	font-weight: 700;
@@ -32,7 +32,7 @@ header {
 }
 .promo h1 {
 	color: #ffffff;
-	background-color: rgba(52, 27, 43, 0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 	font-size: 25px;
 	font-weight: 300;
 	padding: 52px;
