@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<title>Зоосалон BastGROOM</title>
     <link href="./assets/css/normalize.min.css" rel="stylesheet">
 
     <!-- Main Style -->
@@ -12,34 +12,32 @@
 </head>
 <body>
 	<header>
-		<div class="header-top">
+		<div class="header-top clearfix">
 			<div class="header-logo">
-				<img src="./assets/img/logo.png">
+				<img src="./assets/img/logo.png" alt="BastGroom">
 			</div>
-			<p>
 			<a href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
-			</p>
 		</div>
 		<div class="promo">
-			<h1>Безупречный внешний вид для Ваших питомцев от настоящих профессионалов</h1>
+			<h1 class="visible">Безупречный внешний вид для Ваших питомцев от <span>настоящих профессионалов</span></h1>
 			<h1>Мы заботимся о Ваших питомцах, поэтому <span>стрижка когтей бесплатна</span> для всех</h1>
 		</div>	
 	</header>
 	<main>
 		<section class="features">
 			<h2>Почему мы?</h2>
-			<ul>
-				<li>Умеем работать с животными со сложной психикой</li>
-				<li>Удаляем зубной камень ультразвуком без наркоза и собакам и кошкам</li>
-				<li>Находимся в двух минутах от метро</li>
+			<ul class="clearfix">
+				<li class="feature-item feature-work">Умеем работать с животными со сложной психикой</li>
+				<li class="feature-item feature-teeth">Удаляем зубной камень ультразвуком без наркоза и собакам и кошкам</li>
+				<li class="feature-item feature-metro">Находимся в пешей доступности от метро: всего 2 минуты!</li>
 			</ul>
 		</section>
-		<section class="call-to-action">
-			<h2>Запишите своего питомца на комплекс сейчас и получите <span>скидку 25%</span> на ультразвуковое удаление зубного камня без наркоза!</h2>
+		<section class="call-to-action clearfix">
+			<h2 class="title">Запишите своего питомца на комплекс сейчас и получите <span>скидку 25%</span> на ультразвуковое удаление зубного камня без наркоза!</h2>
 			<div class="feedback">
 				<h3>Оставьте заявку на бесплатную консультацию специалиста,</h3>
 				<p>а также вы сможете выбрать подходящее время для визита </p>
-				<form id="feedback-form" class="" action="" method="post">
+				<form id="feedback-form" class="feedback-form" action="" method="post">
 					<input type="text" name="user-name" placeholder="имя">
 					<input type="phone" name="user-phone" placeholder="телефон" required>
 					<input type="submit" class="btn" value="Записаться">
@@ -49,30 +47,32 @@
 		</section>
 		<section class="services">
 			<h2>Какие услуги?</h2>
-			<ul>
-				<li>
+			<div class="service-items">
+				<div class="service-item">
 					<h3>Стрижка и тримминг собак</h3>
 					<p>Осуществляется только сертефицироваными мастерами</p>
-				</li>
-				<li>
+				</div>
+				<div class="service-item">
 					<h3>Удаление зубного камня</h3>
 					<p>Ультразвуковым аппаратом без наркоза</p>
-				</li>
-				<li>
+				</div>
+				<div class="service-item">
 					<h3>Стрижка кошек</h3>
 					<p>Без применения успокоительных препаратов</p>
-				</li>
-				<li>
+				</div>
+				<div class="service-item">
 					<h3>Узоры и окрашивание</h3>
 					<p>Используемые материалы разработаны специально для животных</p>
-				</li>
+				</div>
 				
-			</ul>
+			</div>
 		</section>
 	
 		<section class="portfolio">
 			<h2>Наше творчество</h2>
-			<div></div>
+			<div>
+				
+			</div>
 			<a href="https://www.instagram.com/bastgroom/" class="btn">Посмотреть больше</a>
 		</section>
 		<section class="contacts">
@@ -84,7 +84,8 @@
 					<p>Без выходных</p>
 				</div>
 				<div class="right">
-					<h3><span>м.</span>Нагорная</h3>
+					<h3>Адрес и телефон:</h3>
+					<p><span>м.</span>Нагорная</p>
 					<p>Электролитный проезд 16к1</p>
 				</div>
 			</div>
@@ -94,14 +95,14 @@
 		</section>
 	</main>
 	<footer>
-		<div>
+		<div class="social">
 			<b>Давайте дружить!</b>
 			<a class="social-btn social-btn-vk" href="https://vk.com/bastgroom">Вконтакте</a>
 	        <a class="social-btn social-btn-in" href="https://instagram.com/bastgroom">Инстаграм</a>
 	     </div>
-	     <div>
-	     	<a href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
-			<a href="#feedback-form">Записаться</a>
+	     <div class="footer-contacts">
+	     	<a class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
+			<a class="btn" href="#feedback-form">Записаться</a>
 	     </div>   
 	</footer>
 
