@@ -5,11 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<title>Зоосалон BastGROOM</title>
-    <link href="./assets/css/normalize.min.css" rel="stylesheet">
-
-    <!-- Main Style -->
+     <link href="./assets/css/normalize.min.css" rel="stylesheet"> -
+	
 	<link rel="stylesheet" href="./assets/css/style.css">
-</head>
+</head
 <body>
 	<header>
 		<div class="header-top clearfix">
@@ -37,9 +36,9 @@
 			<div class="feedback">
 				<h3>Оставьте заявку на бесплатную консультацию специалиста,</h3>
 				<p>а также вы сможете выбрать подходящее время для визита </p>
-				<form id="feedback-form" class="feedback-form" action="" method="post">
+				<form class="feedback-form" action="" method="post">
 					<input type="text" name="user-name" placeholder="имя">
-					<input type="phone" name="user-phone" placeholder="телефон" required>
+					<input type="phone" name="user-phone" pattern="[0-9]{10}" placeholder="телефон" required>
 					<input type="submit" class="btn" value="Записаться">
 					<span>Ваши данные не будут переданы 3-им лицам</span>
 				</form>
@@ -48,61 +47,66 @@
 		<section class="services">
 			<h2>Какие услуги?</h2>
 			<div class="service-items">
-				<div class="service-item">
-					<h3>Стрижка и тримминг собак</h3>
-					<p>Осуществляется только сертефицироваными мастерами</p>
+				<div class="table-row">
+					<div class="service-item">
+						<h3>Стрижка и тримминг собак</h3>
+						<p>Осуществляется только сертефицироваными мастерами</p>
+					</div>
+					<div class="service-item">
+						<h3>Удаление зубного камня</h3>
+						<p>Ультразвуковым аппаратом без наркоза</p>
+					</div>
 				</div>
-				<div class="service-item">
-					<h3>Удаление зубного камня</h3>
-					<p>Ультразвуковым аппаратом без наркоза</p>
+				<div class="table-row">	
+					<div class="service-item">
+						<h3>Стрижка кошек</h3>
+						<p>Без применения успокоительных препаратов</p>
+					</div>
+					<div class="service-item">
+						<h3>Узоры и окрашивание</h3>
+						<p>Используемые материалы разработаны специально для животных</p>
+					</div>
 				</div>
-				<div class="service-item">
-					<h3>Стрижка кошек</h3>
-					<p>Без применения успокоительных препаратов</p>
-				</div>
-				<div class="service-item">
-					<h3>Узоры и окрашивание</h3>
-					<p>Используемые материалы разработаны специально для животных</p>
-				</div>
-				
 			</div>
 		</section>
 	
 		<section class="portfolio">
 			<h2>Наше творчество</h2>
-			<div>
-				
+			<div class="wrapper">
+				<img src="./assets/img/cat.jpg">
+				<img src="./assets/img/vest.jpg">
+				<img src="./assets/img/shpits.jpg">
+				<img src="./assets/img/york.jpg">
 			</div>
-			<a href="https://www.instagram.com/bastgroom/" class="btn">Посмотреть больше</a>
+			<a href="https://www.instagram.com/bastgroom/" class="btn" target="_blank">Посмотреть все</a>
 		</section>
 		<section class="contacts">
 			<h2>Контакты</h2>
 			<div class="contacts-block">
-				<div class="left">
+				<div class="cell">
 					<h3>Время работы:</h3>
 					<p>10:00-21:00</p>
 					<p>Без выходных</p>
 				</div>
-				<div class="right">
+				<div class="cell">
 					<h3>Адрес и телефон:</h3>
 					<p><span>м.</span>Нагорная</p>
 					<p>Электролитный проезд 16к1</p>
 				</div>
 			</div>
 			<div class="map">
-				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.928134460973!2d37.611564!3d55.672225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab34b8b62f31f%3A0x85ce7091fa26ebdc!2z0K3Qu9C10LrRgtGA0L7Qu9C40YLQvdGL0Lkg0L_RgC3QtCwgMTYg0LrQvtGA0L_Rg9GBIDEsINCc0L7RgdC60LLQsCwgTW9zY293IE9ibGFzdCwgMTE1MjMw!5e0!3m2!1sru!2sru!4v1556033357069!5m2!1sru!2sru" frameborder="0" style="border:0"allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div class="social">
-			<b>Давайте дружить!</b>
+	<footer class="clearfix">
+		<div class="footer-social">
 			<a class="social-btn social-btn-vk" href="https://vk.com/bastgroom">Вконтакте</a>
 	        <a class="social-btn social-btn-in" href="https://instagram.com/bastgroom">Инстаграм</a>
 	     </div>
 	     <div class="footer-contacts">
 	     	<a class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
-			<a class="btn" href="#feedback-form">Записаться</a>
+			<a class="btn" href="#">Записаться</a>
 	     </div>   
 	</footer>
 
