@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,600,700');
 /*#f46c38*/
+html {
+	font-size: 62.5%;
+}
 body {
 	width: 1040px;
 	color: #787878;
 	background-color: #f3f6fa;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-weight: 300;
 }
 header {
-	padding-top: 35px;
-	padding-bottom: 75px;
+	padding-top: 3%;
+	padding-bottom: 8%;
 	background-image: url("../img/header-bg-1.jpg");
 	background-repeat: no-repeat;
     background-position: center;
@@ -104,12 +107,25 @@ header {
 	width: 98%;
 }
 .header-top a {
-	font-size: 30px;
+	font-size: 3rem;
 	font-weight: 700;
 	text-decoration: none;
 	color: #000000;
 	float: right;
 	padding-top: 33px;
+	position: relative;
+}
+.header-top .phone-number::before {
+	content:"";
+	width: 29px;
+	height: 29px; 
+	position: absolute;
+	top: 30px;
+	left: -33px;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -5px -680px;
+	
 }
 .promo {
 	background-color: rgba(0,0,0,0.5);
@@ -119,8 +135,8 @@ header {
 	width: 270px;
 }
  .promo h1 {
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
 	font-weight: 300;
 	color: #ffffff;
 	text-align: center;
@@ -137,7 +153,7 @@ main section {
 }
 main h2 {
 	color: #362526;
-	font-size: 38px;
+	font-size: 3.8rem;
 	text-align: center;
 	margin: 0;
 	margin-bottom: 30px;
@@ -156,17 +172,26 @@ main h2 {
 }
 .feature-item::before {
 	content: "";
-	background-color: red;
 	width: 154px;
 	height:125px;
 	position: absolute;
 	top:0;
 	left: 95px;
-
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+}
+.feature-work::before {
+	background-position:-5px -275px;
+}
+.feature-teeth::before {
+	background-position: -5px -5px;
+}
+.feature-metro::before {
+	  background-position:-5px -140px;
 }
 .call-to-action .title {
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 3rem;
+	line-height: 3.6rem;
 	font-weight: 600;
 	color: #404040;
 	text-align: center;
@@ -192,8 +217,8 @@ main h2 {
 }
 
 .call-to-action .feedback h3 {
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
 	margin: 10px 0 ;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -204,7 +229,7 @@ main h2 {
 }
 
 .call-to-action .feedback .feedback-form span {
-	font-size: 10px;
+	font-size: 1rem;
 }
  .feedback-form input[type="text"],
   .feedback-form input[type="phone"] {
@@ -258,9 +283,23 @@ main h2 {
 	left:15px;
 	background-color: #ff6633;
 	border-radius: 50%;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
 }
+.services .service-items .cat-cut::before {
+	background-position: -5px -719px;
+}
+.services .service-items .dog-cut::before {
+	background-position:  -5px -505px;
+}
+.services .service-items .teeth-cleaning::before {
+	background-position: -5px -814px;
+}
+.services .service-items .creative::before {
+	background-position:  -5px -410px;
+} 
 .services .service-items .service-item h3 {
-	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 600;
 }
 
@@ -318,15 +357,22 @@ footer {
 .footer-social .social-btn {
 	text-decoration: none;
 	color: #ffffff;
-	font-size: 0px;
+	font-size: 0;
 	display: inline-block;
-    width: 70px;
-    height: 70px;
+	border-radius:50%;
+	width: 70px;
+  	height: 70px;
     margin-right: 10px;
     vertical-align: middle;
-    ;
-	background-color: red;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;	
 }
+.footer-social .social-btn-vk {
+	background-position: -5px -909px;
+}
+.footer-social .social-btn-in {
+	  background-position: -5px -600px;
+} 
 .footer-contacts {
 	float: right;
 	text-align: center;
@@ -334,7 +380,7 @@ footer {
 .footer-contacts .phone-number {
 	display: block;
 	margin-bottom: 10px;
-	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: 700;
 	color: #ffffff;
 	text-decoration: none;
