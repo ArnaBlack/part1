@@ -3,45 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Зоосалон BastGROOM</title>
-     <link href="./assets/css/normalize.min.css" rel="stylesheet"> -
+     <link href="./assets/css/normalize.min.css" rel="stylesheet"> 
 	
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/media.css">
 </head
 <body>
 	<header>
-		<div class="header-top clearfix">
-			<div class="header-logo">
-				<img src="./assets/img/logo.png" alt="BastGroom">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-logo">
+					<a href="index.html"> <img src="./assets/img/logo.png" alt="BastGroom"><a/>
+				</div>
+				<a  class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
 			</div>
-			<a  class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
-		</div>
-		<div class="promo">
-			<h1 class="visible">Безупречный внешний вид для Ваших питомцев от <span>настоящих профессионалов</span></h1>
-			<h1>Мы заботимся о Ваших питомцах, поэтому <span>стрижка когтей бесплатна</span> для всех</h1>
-		</div>	
+			<div class="promo">
+				<h1 class="visible">Безупречный внешний вид для Ваших питомцев от <span>настоящих профессионалов</span></h1>
+				<h1>Мы заботимся о Ваших питомцах, поэтому <span>стрижка когтей бесплатна</span> для всех</h1>
+			</div>
+		</div>		
 	</header>
 	<main>
-		<section class="features">
+		<section class="features container">
 			<h2>Почему мы?</h2>
-			<ul class="clearfix">
+			<ul>
 				<li class="feature-item feature-work">Умеем работать с животными со сложной психикой</li>
 				<li class="feature-item feature-teeth">Удаляем зубной камень ультразвуком без наркоза и собакам и кошкам</li>
 				<li class="feature-item feature-metro">Находимся в пешей доступности от метро: всего 2 минуты!</li>
 			</ul>
 		</section>
 		<section class="call-to-action clearfix">
-			<h2 class="title">Запишите своего питомца на комплекс сейчас и получите <span>скидку 25%</span> на ультразвуковое удаление зубного камня без наркоза!</h2>
+			<h2 class="title">Запишите своего питомца на комплекс сейчас</h2>
+			<p> и получите <span>скидку 25%</span> на ультразвуковое удаление зубного камня без наркоза!</p>
 			<div class="feedback">
-				<h3>Оставьте заявку на бесплатную консультацию специалиста,</h3>
-				<p>а также вы сможете выбрать подходящее время для визита </p>
 				<form class="feedback-form" action="" method="post">
 					<input type="text" name="user-name" placeholder="имя">
 					<input type="phone" name="user-phone" pattern="[0-9]{10}" placeholder="телефон" required>
 					<input type="submit" class="btn" value="Записаться">
-					<span>Ваши данные не будут переданы 3-им лицам</span>
 				</form>
+			<span>Ваши данные не будут переданы 3-им лицам</span>	
 			</div>
 		</section>
 		<section class="services">
@@ -71,24 +73,48 @@
 		</section>
 	
 		<section class="portfolio">
-			<h2>Наше творчество</h2>
-			<div class="wrapper">
-				<img src="./assets/img/cat.jpg">
-				<img src="./assets/img/vest.jpg">
-				<img src="./assets/img/shpits.jpg">
-				<img src="./assets/img/york.jpg">
-			</div>
-			<a href="https://www.instagram.com/bastgroom/" class="btn" target="_blank">Посмотреть все</a>
+			<div class="container">
+				<h2>Наше творчество</h2>
+					<div id="slider">
+							<ul class="slide-wrapper clearfix">
+								<li class="slide slide-active">
+									<img width="300" height="300" src="./assets/img/cat.jpg" alt="кот">
+								</li>
+								<li class="slide slide-active">
+									<img width="300" height="300" src="./assets/img/vest.jpg" alt="вест">
+								</li>
+								<li class="slide slide-active">
+									<img width="300" height="300" src="./assets/img/shpits.jpg" alt="шпиц">
+								</li>
+								<li class="slide slide-hidden">
+									<img width="300" height="300" src="./assets/img/york.jpg" alt="йорк">
+								</li>
+								<li class="slide slide-hidden">
+									<img width="300" height="300" src="./assets/img/grifon.jpg" alt="грифон">
+								</li>
+							</ul>
+							<div id="slide-nav">
+								<a href="#" data-slide="0" class="current"></a>
+								<a href="#" data-slide="1"></a>
+								<a href="#" data-slide="2"></a>
+								<a href="#" data-slide="3"></a>
+								<a href="#" data-slide="4"></a>
+							</div>
+							<a href="#" class="slide-btn btn-prev">&lt;</a>
+							<a href="#" class="slide-btn btn-next">&gt;</a>	
+					</div>
+			</div>		
+			<a href="https://www.instagram.com/bastgroom/" class="btn" target="_blank">Подробнее</a>
 		</section>
 		<section class="contacts">
 			<h2>Контакты</h2>
-			<div class="contacts-block">
-				<div class="cell">
+			<div class="contacts-block container">
+				<div class="contact-cell">
 					<h3>Время работы:</h3>
 					<p>10:00-21:00</p>
 					<p>Без выходных</p>
 				</div>
-				<div class="cell">
+				<div class="contact-cell">
 					<h3>Адрес и телефон:</h3>
 					<p><span>м.</span>Нагорная</p>
 					<p>Электролитный проезд 16к1</p>
@@ -99,15 +125,17 @@
 			</div>
 		</section>
 	</main>
-	<footer class="clearfix">
-		<div class="footer-social">
-			<a class="social-btn social-btn-vk" href="https://vk.com/bastgroom">Вконтакте</a>
-	        <a class="social-btn social-btn-in" href="https://instagram.com/bastgroom">Инстаграм</a>
-	     </div>
-	     <div class="footer-contacts">
-	     	<a class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
-			<a class="btn" href="#">Записаться</a>
-	     </div>   
+	<footer>
+		<div class="container">
+			<div class="footer-social">
+				<a class="social-btn social-btn-vk" href="https://vk.com/bastgroom">Вконтакте</a>
+		        <a class="social-btn social-btn-in" href="https://instagram.com/bastgroom">Инстаграм</a>
+		     </div>
+		     <div class="footer-contacts">
+		     	<a class="phone-number" href="tel:+7 (495) 795-64-72">+7 (495) 795-64-72</a>
+				<a class="btn" href="#">Записаться</a>
+		     </div>   
+		</div>     
 	</footer>
 
 <script href="assets/js/main.js" type="text/javascript"></script>	
