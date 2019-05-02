@@ -118,6 +118,7 @@ main section {
 main h2 {
 	color: #362526;
 	font-size: 3.8rem;
+	line-height: 3rem;
 	text-align: center;
 	margin: 0;
 	position: relative;
@@ -135,7 +136,7 @@ main h2 {
 }
 .feature-item {
 	position: relative;
-	float: left;
+	/*float: left;*/
    	width:30%;
     padding-top: 130px;
     text-align: center;
@@ -148,7 +149,9 @@ main h2 {
 	height:125px;
 	position: absolute;
 	top:0;
-	left: 24%;
+	left: 0;
+	right: 0;
+	margin:auto;
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 }
@@ -275,17 +278,30 @@ main h2 {
 	height: 50px;
 }
 .services .service-items {
-	display: table;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	/*display: table;
 	margin: 0 auto;
-	border-spacing: 30px;
+	border-spacing: 30px;*/
 }
 .services .service-items .table-row {
-	display: table-row;
+	/*display: table-row;*/
 }
 .services .service-items .service-item {
-	display: table-cell;
+	/*display: table-cell;*/
 	text-align: center;
-	width: 350px;
+	width: 30vw;
+	/*width: 350px;*/
+	margin-bottom: 5%;
 	padding-left: 100px;
 	padding-top: 10px;
 	position: relative;
@@ -392,7 +408,7 @@ main h2 {
 }
 .portfolio .btn-prev {
 	position: absolute;
-	top: 45%;
+	top: 40%;
 	left: 1%;
 }
 .portfolio .btn-next {
@@ -475,7 +491,9 @@ main h2 {
 footer {
 	background-color: #362526;
 	padding:30px 0;
-	display: -webkit-box;
+}
+footer .container {
+		display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -486,6 +504,7 @@ footer {
 }
 .footer-social {
 	display: inline-block;
+	margin-bottom: 30px;
 }
 .footer-social .social-btn {
 	color: #ffffff;
@@ -506,7 +525,8 @@ footer {
 	  background-position: -5px -600px;
 } 
 .footer-contacts {
-	float: right;
+	/*float: right;*/
+	display: inline-block;
 	text-align: center;
 }
 .footer-contacts .phone-number {
